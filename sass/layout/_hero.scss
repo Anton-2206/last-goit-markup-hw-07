@@ -1,0 +1,69 @@
+.hero {
+  background-color: #2f303a;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../img-jpeg/background/family.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.hero-title {
+  max-width: 696px;
+  margin: 0 auto;
+}
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.hero-list {
+  display: flex;
+}
+.hero-item:not(:last-child) {
+  margin-right: 30px;
+}
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--primary-title-color);
+  margin-bottom: 30px;
+}
+.hero-item-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  color: var(--third-title-color);
+  margin-bottom: 10px;
+}
+.hero-item-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+}
+.hero-div-svg {
+  width: 270px;
+  height: 120px;
+  left: 215px;
+  top: 774px;
+  background: #f5f4fa;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
