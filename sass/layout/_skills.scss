@@ -1,20 +1,14 @@
 .skills {
   padding-top: 0;
+  padding-bottom: 94px;
 }
-.skills-list {
+.skills_list {
   display: flex;
 }
-.skills-title {
+.skills_title {
   margin-bottom: 50px;
 }
-.skills-item {
-  flex-basis: calc((100% - 60px) / 3);
-  &:not(:last-child) {
-  margin-right: 30px;
-}
-}
-.skills-title,
-.team-title {
+.skills_title {
   font-weight: 700;
   font-size: 36px;
   line-height: calc(42 / 36);
@@ -22,10 +16,16 @@
   letter-spacing: 0.03em;
   color: var(--secondary-title-color);
 }
-.skills-top-wrapper {
+.skills_item {
+  flex-basis: calc((100% - 60px) / 3);
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+.skills_wrapper {
   position: relative;
 }
-.skills-top-text {
+.skills_text {
   position: absolute;
   left: 0;
   bottom: 0;

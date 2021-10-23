@@ -6,12 +6,11 @@
   display: block;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:focus,
-&:hover {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+  &:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
 }
-}
-
 .filter-container {
   padding: 20px 24px;
   border-right: 1px solid #eeeeee;
@@ -21,6 +20,7 @@
 .filter-list {
   display: flex;
   justify-content: center;
+  padding-top: 94px;
   margin-bottom: 50px;
 }
 .filter-item:not(:last-child) {
