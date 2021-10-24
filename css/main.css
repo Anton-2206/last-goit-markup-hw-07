@@ -76,6 +76,19 @@ body {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
+.header_logo {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+  letter-spacing: 0.03em;
+  color: #000000;
+}
+
+.header_logo-web {
+  color: #2196f3;
+}
+
 .header {
   border-bottom: 1px solid #ececec;
 }
@@ -115,22 +128,6 @@ body {
 
 .header .header_logo {
   margin-right: 93px;
-}
-
-.header_logo {
-  font-family: Raleway;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: calc(31 / 26);
-  letter-spacing: 0.03em;
-}
-
-.header_logo {
-  color: #000000;
-}
-
-.header_logo-web {
-  color: #2196f3;
 }
 
 .header_nav-item {
@@ -313,22 +310,6 @@ body {
   color: white;
 }
 
-.team {
-  background-color: #f5f4fa;
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-.team-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: calc(42 / 36);
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--secondary-title-color);
-  margin-bottom: 50px;
-}
-
 .team-list {
   display: flex;
 }
@@ -367,6 +348,22 @@ body {
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
   margin-bottom: 16px;
+}
+
+.team {
+  background-color: #f5f4fa;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--secondary-title-color);
+  margin-bottom: 50px;
 }
 
 .social-list {
@@ -472,21 +469,6 @@ body {
   padding-bottom: 60px;
 }
 
-.footer_logo {
-  display: inline-block;
-  margin-bottom: 20px;
-  font-family: Raleway;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: calc(31 / 26);
-  letter-spacing: 0.03em;
-  color: #ffffff;
-}
-
-.footer_web {
-  color: #2196f3;
-}
-
 .footer-address_list {
   margin-right: 70px;
 }
@@ -534,6 +516,21 @@ body {
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 20px;
+}
+
+.footer_logo {
+  display: inline-block;
+  margin-bottom: 20px;
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+
+.footer_web {
+  color: #2196f3;
 }
 
 .footer-btn {
@@ -600,35 +597,13 @@ body {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.filter-top-wrapper {
-  position: relative;
-  overflow: hidden;
-}
-
-.about-link {
-  display: block;
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.about-link:focus, .about-link:hover {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-.filter-container {
-  padding: 20px 24px;
-  border-right: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
-  border-left: 1px solid #eeeeee;
-}
-
 .filter-list {
   display: flex;
   justify-content: center;
-  padding-top: 94px;
   margin-bottom: 50px;
 }
 
-.filter-item:not(:last-child) {
+.filter-list_item:not(:last-child) {
   margin-right: 8px;
 }
 
@@ -638,12 +613,33 @@ body {
   margin: -15px;
 }
 
-.filter-about-item {
+.filter-about_item {
   flex-basis: calc((100% - 90px) / 3);
   margin: 15px;
 }
 
-.filter-about-title {
+.filter-about_link {
+  display: block;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.filter-about_link:focus, .filter-about_link:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.filter-about_top-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.filter-about_container {
+  padding: 20px 24px;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+}
+
+.filter-about_title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -652,14 +648,14 @@ body {
   margin-bottom: 4px;
 }
 
-.filter-about-text {
+.filter-about_text {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 }
 
-.filter-top-text {
+.filter-about_top-text {
   background-color: rgba(33, 150, 243, 0.9);
   font-size: 18px;
   line-height: 1.56;
@@ -673,8 +669,8 @@ body {
   transition: transform 250ms linear;
 }
 
-.about-link:focus .filter-top-text,
-.about-link:hover .filter-top-text {
+.filter-about_link:focus .filter-about_top-text,
+.filter-about_link:hover .filter-about_top-text {
   transform: translateY(0%);
 }
 
@@ -869,5 +865,10 @@ body {
 
 .check-doc {
   color: #2196f3;
+}
+
+.filter {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 /*# sourceMappingURL=main.css.map */

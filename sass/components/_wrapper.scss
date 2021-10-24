@@ -1,8 +1,22 @@
-.filter-top-wrapper {
-  position: relative;
-  overflow: hidden;
+.filter-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
 }
-.about-link {
+.filter-list_item:not(:last-child) {
+  margin-right: 8px;
+}
+// ---карточки----
+.filter-about {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+.filter-about_item {
+  flex-basis: calc((100% - 90px) / 3);
+  margin: 15px;
+}
+.filter-about_link {
   display: block;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:focus,
@@ -11,31 +25,17 @@
       1px 4px 6px rgba(0, 0, 0, 0.16);
   }
 }
-.filter-container {
+.filter-about_top-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+.filter-about_container {
   padding: 20px 24px;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
 }
-.filter-list {
-  display: flex;
-  justify-content: center;
-  padding-top: 94px;
-  margin-bottom: 50px;
-}
-.filter-item:not(:last-child) {
-  margin-right: 8px;
-}
-.filter-about {
-  display: flex;
-  flex-wrap: wrap;
-  margin: -15px;
-}
-.filter-about-item {
-  flex-basis: calc((100% - 90px) / 3);
-  margin: 15px;
-}
-.filter-about-title {
+.filter-about_title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -43,7 +43,7 @@
   color: var(--third-title-color);
   margin-bottom: 4px;
 }
-.filter-about-text {
+.filter-about_text {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;

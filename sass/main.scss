@@ -4,14 +4,17 @@
 @import "./utils/hidden";
 @import "./components/container";
 @import "./components/btn";
+@import "./components/header-logo";
 @import "./layout/header";
 @import "./layout/hero";
 @import "./layout/benefits";
 @import "./layout/skills";
+@import "./components/team-list";
 @import "./layout/team";
 @import "./components/social";
 @import "./layout/clients";
 @import "./layout/footer";
+@import "./components/footer-logo";
 @import "./components/footer-btn";
 @import "./components/input";
 @import "./components/filter-btn";
@@ -19,3 +22,4 @@
 @import "./components/top-text";
 @import "./components/backdrop";
 @import "./components/modal";
+@import "./layout/filter";
