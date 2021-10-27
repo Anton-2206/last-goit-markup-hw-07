@@ -1,15 +1,15 @@
-.social-list {
+.social {
   display: flex;
   justify-content: center;
 }
-.social-list_item {
+.social__item {
   width: 44px;
   height: 44px;
 }
-.social-list_item:not(:last-child) {
+.social__item:not(:last-child) {
   margin-right: 10px;
 }
-.social-list_link {
+.social__link {
   width: 100%;
   height: 100%;
   display: block;
@@ -23,12 +23,12 @@
     background-color: #2196f3;
   }
 }
-.social-list_icon {
+.social__icon {
   width: 20px;
   height: 20px;
   fill: #afb1b8;
-  .social-list_link:hover &,
-  .social-list_link:focus & {
+  .social__link:hover &,
+  .social__link:focus & {
     fill: #ffffff;
   }
 }
