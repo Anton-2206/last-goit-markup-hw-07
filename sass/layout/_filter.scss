@@ -2,3 +2,11 @@
   padding-top: 94px;
   padding-bottom: 94px;
 }
+.filter-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.filter-list__item:not(:last-child) {
+  margin-right: 8px;
+}

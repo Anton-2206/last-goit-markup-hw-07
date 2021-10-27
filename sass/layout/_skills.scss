@@ -1,14 +1,13 @@
 .skills {
   padding-top: 0;
-  padding-bottom: 94px;
 }
-.skills_list {
+.skills__list {
   display: flex;
 }
-.skills_title {
+.skills__title {
   margin-bottom: 50px;
 }
-.skills_title {
+.skills__title {
   font-weight: 700;
   font-size: 36px;
   line-height: calc(42 / 36);
@@ -16,16 +15,16 @@
   letter-spacing: 0.03em;
   color: var(--secondary-title-color);
 }
-.skills_item {
+.skills__item {
   flex-basis: calc((100% - 60px) / 3);
   &:not(:last-child) {
     margin-right: 30px;
   }
 }
-.skills_wrapper {
+.skills__wrapper {
   position: relative;
 }
-.skills_text {
+.skills__text {
   position: absolute;
   left: 0;
   bottom: 0;
