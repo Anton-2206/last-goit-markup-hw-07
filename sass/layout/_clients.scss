@@ -1,8 +1,4 @@
-.clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-.clients-title {
+.clients__title {
   margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
@@ -15,6 +11,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.clients-list__item:not(:last-child) {
+  margin-right: 30px;
 }
 .clients-list__link {
   display: flex;
@@ -30,9 +29,7 @@
     border-color: #2196f3;
   }
 }
-.clients-list__item:not(:last-child) {
-  margin-right: 30px;
-}
+
 .clients-list__svg {
   fill: #afb1b8;
   align-content: center;

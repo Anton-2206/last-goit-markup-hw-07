@@ -1,4 +1,4 @@
-.online-input {
+.footer-form__online {
   color: #ffffff;
   display: block;
   width: 358px;
@@ -11,7 +11,7 @@
   margin-right: 12px;
   padding-left: 16px;
 }
-.online-input::placeholder {
+.footer-form__online::placeholder {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
@@ -19,9 +19,6 @@
   align-items: center;
   color: rgba(255, 255, 255, 0.6);
 }
-.footer-form {
-  margin-right: 12px;
-}
-.footer-input {
+.footer-form__input {
   display: flex;
 }
